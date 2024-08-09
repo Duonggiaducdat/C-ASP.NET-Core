@@ -1,0 +1,70 @@
+﻿@model QLTHUVIEN.Models.Sach
+<div class="Customer">
+    <br style="height: 100px; content: ''; display: block;">
+    <h2>Edit Sách</h2>
+    <form asp-action="Edit">
+        <div class="form-group">
+            <label asp-for="Masach" class="control-label"></label>
+            <input asp-for="Masach" class="form-control" readonly="readonly" />
+            <span asp-validation-for="Masach" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Tensach" class="control-label"></label>
+            <input asp-for="Tensach" class="form-control" />
+            <span asp-validation-for="Tensach" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Matg" class="control-label"></label>
+            <select asp-for="Matg" asp-items="ViewBag.MatgList" class="form-control">
+                <option value="">-- Select Author --</option>
+            </select>
+            <span asp-validation-for="Matg" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Tenlinhvuc" class="control-label"></label>
+            <input asp-for="Tenlinhvuc" class="form-control" />
+            <span asp-validation-for="Tenlinhvuc" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Maloaisach" class="control-label"></label>
+            <select asp-for="Maloaisach" asp-items="ViewBag.MaloaisachList" class="form-control">
+                <option value="">-- Select Category --</option>
+            </select>
+            <span asp-validation-for="Maloaisach" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Giamua" class="control-label"></label>
+            <input asp-for="Giamua" class="form-control" />
+            <span asp-validation-for="Giamua" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Giaban" class="control-label"></label>
+            <input asp-for="Giaban" class="form-control" />
+            <span asp-validation-for="Giaban" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Lantaiban" class="control-label"></label>
+            <input asp-for="Lantaiban" class="form-control" />
+            <span asp-validation-for="Lantaiban" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Tennhaxuatban" class="control-label"></label>
+            <input asp-for="Tennhaxuatban" class="form-control" />
+            <span asp-validation-for="Tennhaxuatban" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Namxuatban" class="control-label">Năm xuất bản</label>
+            <input type="date" value="@Model.Namxuatban" class="form-control" />
+            <span asp-validation-for="Namxuatban" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="form-group col-2">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+            <div class="form-group col-10 d-flex flex-row-reverse">
+                <a asp-action="Index" class="btn btn-primary">Quay lại Index</a>
+            </div>
+        </div>
+    </form>
+</div>
+<br style="height: 100px; content: ''; display: block;">

@@ -1,0 +1,61 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.margintop {
+    margin-top: 80px;
+}
+
+.container mt-4 {
+    width: 800px;
+}
+
+.Customer {
+    width: 100%;
+    max-width: 1300px; /* B?n có th? thay ??i giá tr? này */
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+    .pagination a {
+        color: #007bff;
+        padding: 10px 15px;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+    }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .pagination a:hover {
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }

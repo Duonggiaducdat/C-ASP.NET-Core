@@ -1,0 +1,68 @@
+﻿@model IEnumerable<QLTHUVIEN.Models.Loaisach>
+
+@{
+    ViewData["Title"] = "Danh sách loại sách";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Thêm loại sách mới</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Loại Sách</th>
+                <th>Tên Loại Sách</th>
+                <th>Mô Tả</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+              @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><a asp-action="Details" asp-route-id="@item.Maloaisach" class="btn btn-info">@item.Maloai</a></td>
+                        <td>@item.Tenloaisach</td>
+                        <td>@item.Mota</td>
+                        <td style="width: 140px">
+                            <div> 
+                                <a asp-action="Edit" asp-route-id="@item.Maloaisach" class="btn btn-primary">Sửa</a> |
+                                <button type="button" class="btn btn-danger" data-target="@item.Maloaisach" onclick="return Delete(this);">Xóa</button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                }
+        </tbody>
+    </table>
+</div>
+@section Scripts {
+    <script>
+        function Delete(button) {
+            var result = confirm('Bạn có chắc chắn muốn xóa loại sách này không?');
+            if (result) {
+                // var value1 = $(button).parents().find('.sach-value').val();
+                var value = $(button).data('target');
+
+                $.ajax({
+                    url: '/loaisach/delete',
+                    type: 'POST',
+                    data: { id: value },
+                    success: function (rs) {
+                        if (rs.success) {
+                            window.location.reload();
+                        } else {
+                            alert('Có lỗi sảy ra: ' + rs.message);
+                        }
+                        
+                    }
+                })
+            }
+        }
+    </script>
+}

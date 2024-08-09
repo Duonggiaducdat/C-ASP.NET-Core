@@ -1,0 +1,26 @@
+﻿@model QLTHUVIEN.Models.Loaisach
+
+@{
+    ViewData["Title"] = "Chi tiết loại sách";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <div>
+        <h4>Loại sách</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>Mã Loại Sách</dt>
+            <dd>@Model.Maloai</dd>
+            <dt>Tên Loại Sách</dt>
+            <dd>@Model.Tenloaisach</dd>
+            <dt>Mô Tả</dt>
+            <dd>@Model.Mota</dd>
+        </dl>
+        <p>
+            <a asp-action="Edit" asp-route-id="@Model.Maloaisach" class="btn btn-primary">Sửa</a> |
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </p>
+    </div>
+</div>

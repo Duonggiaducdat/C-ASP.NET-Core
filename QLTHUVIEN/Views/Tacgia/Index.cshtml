@@ -1,0 +1,72 @@
+﻿@model IEnumerable<QLTHUVIEN.Models.Tacgia>
+
+@{
+    ViewData["Title"] = "Danh sách tác giả";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Thêm tác giả mới</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã Tác Giả</th>
+                <th>Tên Tác Giả</th>
+                <th>Năm Sinh</th>
+                <th>Năm Mất</th>
+                <th>Quê Quán</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><a asp-action="Details" asp-route-id="@item.Matg" class="btn btn-info">@item.Matg</a></td>
+                        <td>@item.Tentg</td>
+                        <td>@item.Namsinh</td>
+                        <td>@(item.Nammat.HasValue ? item.Nammat.Value.ToString("dd/MM/yyyy") : "Chưa xác đinh")</td>
+                        <td>@item.Quequan</td>
+                        <td style="width: 140px">
+                            <div>
+                                <a asp-action="Edit" asp-route-id="@item.Matg" class="btn btn-primary">Sửa</a> |
+                                <button type="button" class="btn btn-danger" data-target="@item.Matg" onclick="return Delete(this);">Xóa</button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+@section Scripts {
+    <script>
+        function Delete(button) {
+            var result = confirm('Bạn có chắc chắn muốn xóa tác giả này không?');
+            if (result) {
+                // var value1 = $(button).parents().find('.sach-value').val();
+                var value = $(button).data('target');
+
+                $.ajax({
+                    url: '/tacgia/delete',
+                    type: 'POST',
+                    data: { id: value },
+                    success: function (rs) {
+                        if (rs.success) {
+                            window.location.reload();
+                        } else {
+                            alert('Có lỗi sảy ra: ' + rs.message);
+                        }
+
+                    }
+                })
+            }
+        }
+    </script>
+}

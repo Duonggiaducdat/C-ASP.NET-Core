@@ -1,0 +1,41 @@
+﻿@model QLTHUVIEN.Models.Tacgia
+
+@{
+    ViewData["Title"] = "Tạo Tác Giả Mới";
+}
+
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Tentg" class="control-label">Tên tác giả</label>
+        <input asp-for="Tentg" class="form-control" />
+        <span asp-validation-for="Tentg" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Namsinh" class="control-label">Năm sinh</label>
+            <input asp-for="Namsinh" class="form-control" type="date" id="datepicker" />
+        <span asp-validation-for="Namsinh" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Nammat" class="control-label">Năm mất</label>
+            <input asp-for="Nammat" class="form-control" type="date" id="datepicker" />
+        <span asp-validation-for="Nammat" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quequan" class="control-label">Quê quán</label>
+        <input asp-for="Quequan" class="form-control" />
+        <span asp-validation-for="Quequan" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Tạo</button>
+        <a asp-action="Index" class="btn btn-secondary">Trở về danh sách</a>
+    </div>
+</form>
+
+</div>

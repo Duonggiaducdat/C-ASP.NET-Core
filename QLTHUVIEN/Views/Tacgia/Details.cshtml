@@ -1,0 +1,29 @@
+﻿@model QLTHUVIEN.Models.Tacgia
+
+@{
+    ViewData["Title"] = "Chi tiết tác giả";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <div>
+        
+        <dl class="dl-horizontal">
+            <dt>Mã tác giả</dt>
+            <dd>@Model.Matg</dd>
+            <dt>Tên tác giả</dt>
+            <dd>@Model.Tentg</dd>
+            <dt>Năm sinh</dt>
+            <dd>@Model.Namsinh</dd>
+            <dt>Năm mất</dt>
+            <dd>@Model.Nammat</dd>
+            <dt>Quê quán</dt>
+            <dd>@Model.Quequan</dd>
+        </dl>
+        <p>
+            <a asp-action="Edit" asp-route-id="@Model.Matg" class="btn btn-primary">Sửa</a> |
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+﻿@model X.PagedList.IPagedList<QLTHUVIEN.Models.Sach>
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+
+
+
+@{
+    ViewData["Title"] = "Danh sách sách";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-3">
+            <p>
+                <a asp-action="Create" class="btn btn-primary">Thêm sách mới</a>
+            </p>
+        </div>
+        <div class="col-9">
+            <form asp-action="Index" method="get">
+                <div class="row">
+                    
+                    <div class="form-group col-11">
+                        <input type="text" name="search" class="form-control" placeholder="Nhập để tìm sách ..." />
+                    </div>
+                    <div class="col-1">
+                        <button type="submit" class="btn btn-primary" style="width: 90px">
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã Sách</th>
+                    <th>Tên Sách</th>
+                    <th>Mã Tác Giả</th>
+                    <th>Tên Lĩnh Vực</th>
+                    <th>Tên Loại Sách</th>
+                    <th>Giá Mua</th>
+                    <th>Giá Bán</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td> <a asp-action="Details" asp-route-id="@item.Masach" class="btn btn-info">@item.Masach</a></td>
+                            <td>@item.Tensach</td>
+                            <td>@item.Matg</td>
+                            <td>@item.Tenlinhvuc</td>
+                            <td>@(item.MaloaisachNavigation.Maloai)</td>
+                            <td>@item.Giamua</td>
+                            <td>@item.Giaban</td>
+                            <td style="width : 135px">
+                                <div>
+                                    <a asp-action="Edit" asp-route-id="@item.Masach" class="btn btn-primary">Sửa</a>|
+
+                                    <input type="hidden" name="name" class="sach-value" value="@item.Masach" />
+                                    <button type="button" class="btn btn-danger" data-target="@item.Masach" onclick="return Delete(this);">Xóa</button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-md-12">
+        <div class="pagination justify-content-center">
+            @Html.PagedListPager(Model, page => Url.Action("Index", "Sach", new { page = page }), new PagedListRenderOptions
+       {
+           LinkToFirstPageFormat = "Trang đầu",
+           LinkToLastPageFormat = "Trang cuối",
+           LinkToPreviousPageFormat = "« Trước",
+           LinkToNextPageFormat = "Sau »",
+           EllipsesFormat = "...",
+           DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+           DisplayLinkToLastPage = PagedListDisplayMode.Always,
+           DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+           DisplayLinkToNextPage = PagedListDisplayMode.Always,
+           DisplayLinkToIndividualPages = true
+       })
+        </div>
+    </div>
+    <br style="height: 150px; content: ''; display: block;">
+
+    @section Scripts {
+        <script>
+            function Delete(button) {
+                var result = confirm('Bạn có chắc chắn muốn xóa quyển sách này không?');
+                if (result) {
+                    var value1 = $(button).parents().find('.sach-value').val();
+                    var value = $(button).data('target');
+
+                    $.ajax({
+                        url: '/sach/delete',
+                        type: 'post',
+                        data: { id: value },
+                        success: function (rs) {
+                            window.location.reload();
+                        }
+                    })
+                }
+            }
+        </script>
+    }
+
