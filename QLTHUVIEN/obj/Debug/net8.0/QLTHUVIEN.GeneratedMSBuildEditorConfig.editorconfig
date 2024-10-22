@@ -42,6 +42,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNhY2hcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Sach/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +92,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Tacgia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjZ2lhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/TaiKhoan/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/TaiKhoan/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Text/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/_ViewImports.cshtml]

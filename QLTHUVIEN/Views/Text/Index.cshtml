@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Danh sách sách";
+}
+
+<div class="Customer">
+    <h2 class="margintop">@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-3">
+            <p>
+                <a asp-action="Create" class="btn btn-primary">Thêm sách mới</a>
+            </p>
+        </div>
+
+        <div class="col-9">
+            <form asp-action="Index" method="get">
+                <div class="row">
+
+                    <div class="form-group col-11">
+                        <input type="text" name="search" class="form-control" placeholder="Nhập để tìm sách ..." />
+                    </div>
+                    <div class="col-1">
+                        <button type="submit" class="btn btn-primary" style="width: 90px">
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <table class="table" id="sach-table">
+            <thead>
+                <tr>
+                    <th>Mã Sách</th>
+                    <th>Tên Sách</th>
+                    <th>Mã Tác Giả</th>
+                    <th>Tên Lĩnh Vực</th>
+                    <th>Tên Loại Sách</th>
+                    <th>Giá Mua</th>
+                    <th>Giá Bán</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>            
+            </tbody>
+        </table>
+    </div>
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                function loadTable(search = '') {
+                    var url = `https://localhost:7159/api/Sach?search=${search}`;
+                    $.get(url, function (data) {
+                        var tableBody = $('#sach-table tbody');
+                        tableBody.empty(); // Xóa nội dung cũ
+
+                        // Thêm hàng vào bảng
+                        data.forEach(function (book) {
+                            var row = `
+                                <tr>
+                                    <td><a href="/Sach/Details/${book.masach}" class="btn btn-info">${book.masach}</a></td>
+                                    <td>${book.tensach}</td>
+                                    <td>${book.matg}</td>
+                                    <td>${book.tenlinhvuc}</td>
+                                    <td>${book.maloaisach}</td>
+                                    <td>${book.giamua}</td>
+                                    <td>${book.giaban}</td>
+                                    <td>
+                                        <a href="/Sach/Edit/${book.masach}" class="btn btn-primary me-2">Sửa</a>
+                                        <button type="button" class="btn btn-danger" data-target="${book.masach}" onclick="return Delete(this);">Xóa</button>
+                                    </td>
+                                </tr>
+                            `;
+                            tableBody.append(row); // Thêm từng hàng vào bảng
+                        });
+                    });
+                }
+
+                // Tải dữ liệu lần đầu tiên
+                loadTable();
+
+                // Xử lý tìm kiếm
+                $('#searchForm').submit(function (e) {
+                    e.preventDefault();
+                    var search = $('#searchInput').val();
+                    loadTable(search); // Tải lại dữ liệu với tìm kiếm
+                });
+            });
+
+            function Delete(button) {
+                var result = confirm('Bạn có chắc chắn muốn xóa quyển sách này không?');
+                if (result) {
+                    var value = $(button).data('target');
+
+                    $.ajax({
+                        url: '/Sach/Delete',
+                        type: 'POST',
+                        data: { id: value },
+                        success: function () {
+                            window.location.reload();
+                        }
+                    });
+                }
+                return false; // Ngăn chặn hành động mặc định của nút
+            }
+        </script>
+        }

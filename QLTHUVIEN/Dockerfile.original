@@ -1,0 +1,30 @@
+﻿# Sử dụng hình ảnh SDK của .NET để build ứng dụng
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Thiết lập thư mục làm việc trong container
+WORKDIR /src
+
+# Sao chép tệp csproj vào thư mục làm việc trong container
+COPY ["QLTHUVIEN.csproj", "./"]
+
+# Khôi phục các gói NuGet
+RUN dotnet restore "QLTHUVIEN.csproj"
+
+# Sao chép phần còn lại của mã nguồn vào thư mục làm việc trong container
+COPY src/. .
+
+# Build ứng dụng
+RUN dotnet build "QLTHUVIEN.csproj" -c Release -o /app/build
+
+# Tạo ảnh chạy thời gian
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+
+# Sao chép các tệp đã build từ bước trước
+COPY --from=build /app/build .
+
+# Thiết lập cổng mặc định
+EXPOSE 80
+
+# Chạy ứng dụng
+ENTRYPOINT ["dotnet", "QLTHUVIEN.dll"]

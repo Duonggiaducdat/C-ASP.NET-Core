@@ -1,4 +1,5 @@
-﻿using QLTHUVIEN.Interfaces;
+﻿using Newtonsoft.Json;
+using QLTHUVIEN.Interfaces;
 using QLTHUVIEN.Models;
 namespace QLTHUVIEN.Services
 {
@@ -12,6 +13,14 @@ namespace QLTHUVIEN.Services
         }
         public IEnumerable<Tacgia> GetAll()
         {
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage reponse = httpClient.GetAsync("https://localhost:7159/api/TacGia").Result;
+            if (reponse.IsSuccessStatusCode)
+            {
+                String reponseData = reponse.Content.ReadAsStringAsync().Result;
+                IEnumerable<Tacgia> tacgias = JsonConvert.DeserializeObject<IEnumerable<Tacgia>>(reponseData);
+                return tacgias;
+            }
             return _context.Tacgias.ToList();
         }
         public Tacgia GetById( string id )

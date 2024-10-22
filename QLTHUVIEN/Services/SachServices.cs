@@ -1,19 +1,32 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using QLTHUVIEN.Interfaces;
 using QLTHUVIEN.Models;
-
 
 namespace QLTHUVIEN.Services
 {
     public class SachService : ISachServices
     {
         private readonly QLTVContext _context;
-
         public SachService( QLTVContext context )
         {
             _context = context;
         }
-
+        public IEnumerable<Sach> GetAllSaches()
+        {
+            HttpClient client =  new HttpClient();
+            HttpResponseMessage reponse = client.GetAsync("https://localhost:7159/api/Sach").Result;
+            if (reponse.IsSuccessStatusCode)
+            {
+                string reponseData = reponse.Content.ReadAsStringAsync().Result;
+                IEnumerable<Sach> saches = JsonConvert.DeserializeObject<IEnumerable<Sach>>(reponseData);
+                return saches;
+            }
+            else
+            {
+                return new List<Sach>();
+            }
+        }
         public IEnumerable<Sach> GetAll()
         {
             return _context.Saches
@@ -24,7 +37,7 @@ namespace QLTHUVIEN.Services
         public IEnumerable<Sach> Search( string name )
         {
             return _context.Saches
-                .Where(s => s.Tensach.Contains(name) || s.MaloaisachNavigation.Maloai.Contains(name) || s.MatgNavigation.Matg.Contains(name))
+                .Where(s => s.Tensach.Contains(name) || s.MaloaisachNavigation.MaLoai.Contains(name) || s.MatgNavigation.Tentg.Contains(name))
                 .Include(s => s.MaloaisachNavigation)
                 .Include(s => s.MatgNavigation).ToList();
         }
@@ -35,7 +48,13 @@ namespace QLTHUVIEN.Services
                 .Include(x => x.MaloaisachNavigation)
                 .FirstOrDefault(x => x.Masach == id);
         }
-
+        public string GetMaxMaSach()
+        {
+            return _context.Saches
+                .OrderByDescending(s => s.Masach)
+                .Select(s => s.Masach)
+                .FirstOrDefault();
+        }
         public void Add( Sach sach )
         {
             _context.Saches.Add(sach);
@@ -57,5 +76,6 @@ namespace QLTHUVIEN.Services
                 _context.SaveChanges();
             }
         }
+
     }
 }

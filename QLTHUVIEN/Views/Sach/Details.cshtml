@@ -6,43 +6,69 @@
     <br style="height: 100px; content: ''; display: block;">
     <h2>Chi tiết sách</h2>
 
-    <div>
-        <hr />
-        <dl class="row">
-            <dt class="col-sm-2">Mã Sách</dt>
-            <dd class="col-sm-10">@Model.Masach</dd>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 book-card1 book-container1">
+                @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                {
+                    <!-- Hiển thị hình sách nếu có -->
+                    <img src="/@Url.Content(Model.HinhAnh)" alt="Hình Sách" class="book-image">
+                }
+                else
+                {
+                    <!-- Hiển thị hình sách mặc định và thông báo nếu không có hình sách -->
+                    <div class="default-image">
+                        <img src="/img/default-book.png" alt="Hình Sách Mặc Định" class="book-image">
+                        <p class="no-image-text">Đang tải dữ liệu hình ảnh</p>
+                    </div>
+                }
+            </div>
+            <div class="col-1"></div>    
+            <div class="col-md-5">
+                <!-- Thông tin sách -->
+                <dl class="row">
+                    <dt class="col-sm-4">Mã Sách:</dt>
+                    <dd class="col-sm-8">@Model.Masach</dd>
 
-            <dt class="col-sm-2">Tên Sách</dt>
-            <dd class="col-sm-10">@Model.Tensach</dd>
+                    <dt class="col-sm-4">Tên Sách:</dt>
+                    <dd class="col-sm-8">@Model.Tensach</dd>
 
-            <dt class="col-sm-2">Mã Tác Giả</dt>
-            <dd class="col-sm-10">@Model.MatgNavigation.Tentg</dd>
+                    <dt class="col-sm-4">Tên Tác Giả:</dt>
+                    <dd class="col-sm-8">@Model.MatgNavigation.Tentg</dd>
 
-            <dt class="col-sm-2">Tên Lĩnh Vực</dt>
-            <dd class="col-sm-10">@Model.Tenlinhvuc</dd>
+                    <dt class="col-sm-4">Tên Lĩnh Vực:</dt>
+                    <dd class="col-sm-8">@Model.Tenlinhvuc</dd>
 
-            <dt class="col-sm-2">Tên Loại Sách</dt>
-            <dd class="col-sm-10">@Model.MaloaisachNavigation.Tenloaisach</dd>
+                    <dt class="col-sm-4">Tên Loại Sách:</dt>
+                    <dd class="col-sm-8">@Model.MaloaisachNavigation.Tenloaisach</dd>
 
-            <dt class="col-sm-2">Giá Mua</dt>
-            <dd class="col-sm-10">@Model.Giamua</dd>
+                    <dt class="col-sm-4">Giá Mua:</dt>
+                    <dd class="col-sm-8">@Model.Giamua</dd>
 
-            <dt class="col-sm-2">Giá Bìa</dt>
-            <dd class="col-sm-10">@Model.Giaban</dd>
+                    <dt class="col-sm-4">Giá Bán:</dt>
+                    <dd class="col-sm-8">@Model.Giaban</dd>
 
-            <dt class="col-sm-2">Lần Tái Bản</dt>
-            <dd class="col-sm-10">@Model.Lantaiban</dd>
+                    <dt class="col-sm-4">Lần Tái Bản:</dt>
+                    <dd class="col-sm-8">@Model.Lantaiban</dd>
 
-            <dt class="col-sm-2">Nhà Xuất Bản</dt>
-            <dd class="col-sm-10">@Model.Tennhaxuatban</dd>
+                    <dt class="col-sm-4">Nhà Xuất Bản:</dt>
+                    <dd class="col-sm-8">@Model.Tennhaxuatban</dd>
 
-            <dt class="col-sm-2">Năm Xuất Bản</dt>
-            <dd class="col-sm-10">@Model.Namxuatban</dd>
-        </dl>
+                    <dt class="col-sm-4">Năm Xuất Bản:</dt>
+                    <dd class="col-sm-8">@Model.Namxuatban</dd>
+                    <dt class="col-sm-4">Số Lượng Sách:</dt>
+                    <dd class="col-sm-8">@Model.SoLuong</dd>
+                </dl>
+                
+            </div>
+        </div>
+        <div class="button-group">
+            <a asp-controller="PhieuMuon" asp-action="Create" asp-route-id="@Model.Masach" class="btn btn-info">Mượn Sách</a>
+            <a asp-action="Edit" asp-route-id="@Model.Masach" class="btn btn-danger">Mua Ngay</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </div>
     </div>
 
-    <div>
-        <a asp-action="Edit" asp-route-id="@Model.Masach" class="btn btn-primary">Sửa</a>
-        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
-    </div>
+   
+
 </div>

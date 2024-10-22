@@ -1,0 +1,129 @@
+﻿@using X.Web.PagedList
+@model X.PagedList.IPagedList<QLTHUVIEN.Models.Phieumuon>
+
+@{
+    ViewData["Title"] = "Danh Sách Phiếu Mượn";
+}
+<br style="height: 100px; content: ''; display: block;">
+<div class="Customer">
+    <h1>@ViewData["Title"]</h1>
+    <div class="row">
+    <div class="col-3">
+        <p>
+                <a href="@Url.Action("Create", "Phieumuon")" class="btn btn-primary">Thêm Phiếu Mới</a>
+        </p>
+    </div>
+    <div class="col-9">
+        <form asp-action="Index" method="get">
+            <div class="row">
+
+                <div class="form-group col-11">
+                    <input type="text" name="search" class="form-control" placeholder="Nhập để tìm phiếu ..." />
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-primary" style="width: 90px">
+                        Tìm kiếm
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr style="text-align: center; vertical-align: middle">
+                <th>Mã Phiếu Mượn</th>
+                <th>Mã Sách</th>
+                <th>Ngày Mượn</th>
+                <th>Ngày Trả</th>
+                <th>Họ Tên Người Mượn</th>
+                <th>CMND Người Mượn</th>
+                <th>Địa Chỉ Người Mượn</th>
+                <th>Số Điện Thoại Người Mượn</th>
+                <th>Trạng Thái</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaPhieumuon</td>
+                    <td>@item.Masach</td>
+                    <td>@item.Ngaymuon?.ToShortDateString()</td>
+                    <td>@item.Ngaytra?.ToShortDateString()</td>
+                    <td>@item.HoTenNguoiMuon</td>
+                    <td>@item.CmndNguoiMuon</td>
+                    <td>@item.DiaChiNguoiMuon?</td>
+                    <td>@item.SoDienThoaiNguoiMuon</td>
+                    <td style="width: 110px;">@item.Trangthai</td>
+                    <td style="width: 240px;">
+                        <a asp-action="ReturnBook" style=" height: 37px;font-size: 15px"
+                           asp-route-id="@item.MaPhieumuon" class="btn btn-warning btn-sm"
+                           onclick="return confirmReturn('@item.MaPhieumuon');">Trả Sách</a>
+                        <a asp-action="Edit" asp-controller="Phieumuon" style=" height: 37px;font-size: 15px"
+                           asp-route-id="@item.MaPhieumuon" class="btn btn-warning btn-sm">Chỉnh Sửa</a>
+                        <button type="button" class="btn btn-danger" data-target="@item.MaPhieumuon" onclick="return Delete(this);">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="col-md-12">
+    <div class="pagination justify-content-center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", "Phieumuon", new { page = page }), new PagedListRenderOptions
+   {
+       LinkToFirstPageFormat = "Trang đầu",
+       LinkToLastPageFormat = "Trang cuối",
+       LinkToPreviousPageFormat = "« Trước",
+       LinkToNextPageFormat = "Sau »",
+       EllipsesFormat = "...",
+       DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+       DisplayLinkToLastPage = PagedListDisplayMode.Always,
+       DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+       DisplayLinkToNextPage = PagedListDisplayMode.Always,
+       DisplayLinkToIndividualPages = true
+   })
+    </div>
+</div>
+<br style="height: 150px; content: ''; display: block;">
+
+@section Scripts {
+    <script>
+        function Delete(button) {
+            var result = confirm('Bạn có chắc chắn muốn xóa phiếu mượn này không?');
+            if (result) {
+                // var value1 = $(button).parents().find('.sach-value').val();
+                var value = $(button).data('target');
+
+                $.ajax({
+                    url: '/phieumuon/delete',
+                    type: 'post',
+                    data: { id: value },
+                    success: function (rs) {
+                        window.location.reload();
+                    }
+                })
+            }
+        }
+    function confirmReturn(value) {
+         var result = confirm('Bạn có chắc chắn muốn trả sách này không?');
+         if (result) { // Nếu người dùng nhấp vào OK
+                $.ajax({
+                    url: '/phieumuon/ReturnBook',
+                    type: 'post',
+                    data: { id: value },
+                    success: function (rs) {
+                        window.location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Có lỗi xảy ra: " + error);
+                    }
+                });
+            }
+            return result; // Trả về true nếu người dùng nhấp vào OK, false nếu người dùng nhấp vào Cancel
+        }
+    </script>
+    }
+

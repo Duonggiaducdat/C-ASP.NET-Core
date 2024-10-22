@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QLTHUVIEN
+build_property.RootNamespace = QLTHUVIEN
+build_property.ProjectDir = C:\Users\Duong Dat\source\repos\QLTHUVIEN\QLTHUVIEN\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Duong Dat\source\repos\QLTHUVIEN\QLTHUVIEN
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Loaisach/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNhY2hcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Loaisach/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNhY2hcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Loaisach/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNhY2hcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Loaisach/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNhY2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Phieumuon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVtdW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Sach/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Sach/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Sach/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Sach/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Tacgia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjZ2lhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Tacgia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjZ2lhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Tacgia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjZ2lhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Tacgia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFjZ2lhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/TaiKhoan/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/TaiKhoan/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duong Dat/source/repos/QLTHUVIEN/QLTHUVIEN/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8lf3tkz3d4

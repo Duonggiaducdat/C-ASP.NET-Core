@@ -1,17 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QLTHUVIEN.Interfaces;
 using QLTHUVIEN.Models;
 
 namespace QLTHUVIEN.Controllers
 {
+    [Authorize]
     public class LoaisachController : Controller
     {
         private readonly ILoaiSachServices _l;
         private readonly ISachServices _s;
+
         public LoaisachController( ILoaiSachServices l, ISachServices s )
         {
             _l = l;
             _s = s;
+
         }
         public IActionResult Index()
         {
@@ -23,6 +27,7 @@ namespace QLTHUVIEN.Controllers
             var loaisach = _l.GetById( id );
             return View(loaisach);
         }
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -37,29 +42,33 @@ namespace QLTHUVIEN.Controllers
             return kitu + so.ToString("D2");
 
         }
+
         [HttpPost]
         public IActionResult Create( Loaisach loaisach )
         {
             var maxhientai = _l.GetAll()
-                                        .OrderByDescending(l => l.Maloai)
-                                        .FirstOrDefault()?.Maloai;
-            loaisach.Maloai = MaTutang(maxhientai);
+                                        .OrderByDescending(l => l.MaLoai)
+                                        .FirstOrDefault()?.MaLoai;
+            loaisach.MaLoai = MaTutang(maxhientai);
 
             _l.Add(loaisach);
             return RedirectToAction("Index");
         }
+
         [HttpGet]
         public IActionResult Edit( int id )
         {
             var loaisach = _l.GetById( id );
             return View(loaisach);
         }
+
         [HttpPost]
         public IActionResult Edit( Loaisach loaisach )
         {
             _l.Upgrade(loaisach);
             return RedirectToAction("Index");
         }
+
         [HttpPost]
         public IActionResult Delete( int id )
         {

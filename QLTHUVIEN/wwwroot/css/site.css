@@ -1,4 +1,4 @@
-html {
+﻿html {
     font-size: 14px;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .Customer {
     width: 100%;
-    max-width: 1300px; /* B?n c� th? thay ??i gi� tr? n�y */
+    max-width: 1300px; /* B?n có th? thay ??i giá tr? này */
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
@@ -45,17 +45,73 @@ body {
     .pagination a {
         color: #007bff;
         padding: 10px 15px;
-        border: 1px solid #dee2e6;
+        border: 2px solid #dee2e6;
         border-radius: 0.25rem;
+        margin: 0 4px;
     }
 
-        .pagination a.active {
-            background-color: #007bff;
-            color: white;
-            border-color: #007bff;
-        }
+.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    border: 2px solid #dee2e6;
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    height:42.3px;
+    margin-top:-10px;
+}
 
-        .pagination a:hover {
+.pagination a:hover {
             background-color: #e9ecef;
             border-color: #dee2e6;
-        }
+ }
+.default-image {
+    text-align: center; /* Trung tâm nội dung */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa hình ảnh và văn bản */
+    align-items: center; /* Căn giữa hình ảnh và văn bản */
+    height: 100%; /* Chiếm toàn bộ chiều cao của cột */
+}
+.book-card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16px;
+    text-align: center;
+    height: 480px; /* Đặt chiều cao cố định cho khung */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đảm bảo các phần tử nằm rải đều */
+}
+.book-image img {
+    width: 100%;
+    height: auto; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị cắt */
+}
+
+.no-image-text {
+    margin-top: 20px;
+    color: wheat;
+}
+}
+dl.row dt, 
+dl.row dd {
+    margin-bottom: 20px;
+    font-size:20px;/* Thay đổi giá trị theo nhu cầu */
+}
+
+dl.row dt {
+    font-weight: bold;
+}
+
+dl.row dd {
+    margin-bottom: 0; /* Xóa khoảng cách mặc định dưới phần tử dd */
+}
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* Căn chỉnh các nút sang bên phải */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px; /* Khoảng cách từ các thông tin sách */
+    margin-right:250px;
+}

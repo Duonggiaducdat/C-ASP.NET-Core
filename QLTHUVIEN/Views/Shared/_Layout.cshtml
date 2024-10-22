@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/QLTHUVIEN.styles.css" asp-append-version="true" />
-
+    <link href="~/css/card.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
@@ -16,9 +16,11 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="~/css/adminlte.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
     <!-- Theme style -->
     <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
@@ -36,7 +38,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="/Home/index" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -157,11 +159,9 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                    </a>
-                </li>
+                <div>
+                </div> 
+
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -184,7 +184,13 @@
                                     <img src="~/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                                 </div>
                                 <div class="info">
-                                    <a href="#" class="d-block">Alexander Pierce</a>
+                                    <a href="#" class="d-block">
+                                        <div style="
+                                             font-size: 20px">
+                                            <p>Hello, @User.Identity.Name!</p>
+
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -225,7 +231,22 @@
                                                     <p>Tác giả</p>
                                                 </a>
                                             </li>
+                                            <li class="nav-item">
+                                                <a href="/Phieumuon/Index" class="nav-link">
+                                                    <i class="far fa-circle nav-icon"></i>
+                                                    <p>Phiếu mượn</p>
+                                                </a>
+                                            </li>
+                                            <div class="row">
+                                                <!-- Đăng ký -->
+                                                <a href="@Url.Action("Register", "TaiKhoan")" class="btn btn-primary w-100" style="margin-top : 7px">Register</a>
 
+                                                <!-- Đăng xuất -->
+                                                <form id="logout-form" action="@Url.Action("Logout", "TaiKhoan")" method="post" style="display: inline;">
+                                                    <button type="submit" class="btn btn-secondary w-100" style="margin-top : 7px">Logout</button>
+                                                </form>
+                                            </div>
+                                           
                                     </li>
                                 </ul>
                             </nav>
@@ -259,9 +280,12 @@
             </div>
         </footer>
     </div>
-    
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

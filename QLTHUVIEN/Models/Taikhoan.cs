@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace QLTHUVIEN.Models;
+﻿namespace QLTHUVIEN.Models;
 
 public partial class Taikhoan
 {
+    public int UserId { get; set; }
+
     public string Username { get; set; } = null!;
 
-    public string? PassWord { get; set; }
+    public string Password { get; set; } = null!;
 
-    public int? Role { get; set; }
+    public string Role { get; set; } = null!;
+
+    public virtual ICollection<Phieumuon> Phieumuons { get; set; } = new List<Phieumuon>();
+
+    public virtual ICollection<Sach> Saches { get; set; } = new List<Sach>();
 }

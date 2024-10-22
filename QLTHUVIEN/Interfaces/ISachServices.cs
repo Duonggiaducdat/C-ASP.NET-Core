@@ -10,5 +10,7 @@ namespace QLTHUVIEN.Interfaces
         void Add( Sach sach );
         void Update( Sach sach );
         void Delete( string id );
+        string GetMaxMaSach();
+        IEnumerable<Sach> GetAllSaches();
     }
 }

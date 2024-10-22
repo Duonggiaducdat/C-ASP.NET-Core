@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QLTHUVIEN.Interfaces;
 using QLTHUVIEN.Models;
 
 namespace QLTHUVIEN.Controllers
 {
+    [Authorize]
     public class TacgiaController : Controller
     {
         private readonly ITacGiaServices _t;
@@ -11,6 +13,7 @@ namespace QLTHUVIEN.Controllers
         {
             _t = t;
         }
+
         public IActionResult Index()
         {
             var tacgias = _t.GetAll();
@@ -31,10 +34,12 @@ namespace QLTHUVIEN.Controllers
             return kitu + so.ToString("D2");
 
         }
+
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Create( Tacgia tacgia )
         {
@@ -46,19 +51,20 @@ namespace QLTHUVIEN.Controllers
             _t.Add(tacgia);
             return RedirectToAction("Index");
         }
+
         [HttpGet]
         public IActionResult Edit( string id )
         {
             var tacgia=_t.GetById(id);
             return View(tacgia);
         }
+
         [HttpPost]
         public IActionResult Edit( Tacgia tacgia )
         {
             _t.Update(tacgia);
             return View();
         }
-
         [HttpPost]
         public IActionResult Delete( string id )
         {

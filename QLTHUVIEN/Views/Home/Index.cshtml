@@ -1,4 +1,67 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using X.Web.PagedList
+@model X.PagedList.IPagedList<QLTHUVIEN.Models.Sach>
 
+
+<div class="Customer">
+    <br style="height: 100px; content: ''; display: block;">
+    <h2></h2>
+    <hr />
+    <div class="col-9">
+        <form asp-action="Index" method="get">
+            <div class="row">
+
+                <div class="form-group col-11">
+                    <input type="text" name="search" class="form-control" placeholder="Nhập để tìm sách ..." />
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-primary" style="width: 90px">
+                        Tìm kiếm
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="book-container">
+        @foreach (var item in Model)
+        {
+            <div class="book-card">
+                <img src="~/@Url.Content(item.HinhAnh ?? "img/default-book.png")" alt="Hình Sách">
+                <div class="book-info">
+                    <div class="book-title">@item.Tensach</div>  
+                </div>
+                <div class="buy-button-wrapper">
+                    <div class="book-price">Còn: @item.SoLuong Cuốn</div>
+                    <a href="@Url.Action("Details", "Sach", new { id = item.Masach })" class="btn btn-info">Xem chi tiết</a>
+                        @if( item.SoLuong == 0)
+                        {
+                            <a class="btn btn-danger">Hết sách</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Create", "Phieumuon", new { id = item.Masach })" class="btn btn-danger">Cho mượn</a>
+                            
+                        }       
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="pagination justify-content-center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", "Home", new { page = page }), new PagedListRenderOptions
+   {
+       LinkToFirstPageFormat = "Trang đầu",
+       LinkToLastPageFormat = "Trang cuối",
+       LinkToPreviousPageFormat = "« Trước",
+       LinkToNextPageFormat = "Sau »",
+       EllipsesFormat = "...",
+       DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+       DisplayLinkToLastPage = PagedListDisplayMode.Always,
+       DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+       DisplayLinkToNextPage = PagedListDisplayMode.Always,
+       DisplayLinkToIndividualPages = true
+   })
+    </div>
+</div>
+
+<br style="height: 100px; content: ''; display: block;">

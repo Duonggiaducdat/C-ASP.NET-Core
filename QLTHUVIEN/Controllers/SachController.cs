@@ -1,29 +1,32 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using QLTHUVIEN.Interfaces;
 using QLTHUVIEN.Models;
-using QLTHUVIEN.Models.RequestModel;
-using X.PagedList;
+using System.Security.Claims;
+using X.PagedList.Extensions;
 
 
 namespace QUANLYTHUVIEN.Controllers
 {
-
+    [Authorize]
     public class SachController : Controller
     {
         private readonly ISachServices _s;
         private readonly ILoaiSachServices _l;
 
         private readonly ITacGiaServices _t;
+
         public SachController( ISachServices s, ILoaiSachServices l, ITacGiaServices t )
         {
             _s = s;
             _l = l;
             _t = t;
+
         }
         private void DanhSach()
         {
-            var loaiSachs = _l.GetAll().Select(x => new { Value = x.Maloai, Text = $"{x.Maloai} - {x.Tenloaisach}" });
+            var loaiSachs = _l.GetAll().Select(x => new { Value = x.Maloaisach, Text = $"{x.MaLoai} - {x.Tenloaisach}" });
             var tacGias = _t.GetAll().Select(x => new { Value = x.Matg, Text = $"{x.Matg} - {x.Tentg}" });
             ViewBag.MaloaisachList = new SelectList(loaiSachs, "Value", "Text");
             ViewBag.MatgList = new SelectList(tacGias, "Value", "Text");
@@ -47,7 +50,7 @@ namespace QUANLYTHUVIEN.Controllers
             }
             else
             {
-                saches = _s.GetAll();
+                saches = _s.GetAllSaches();
             }
             var pagedSaches = saches.ToPagedList(page, pageSize);
             return View(pagedSaches);
@@ -59,68 +62,35 @@ namespace QUANLYTHUVIEN.Controllers
             return View(sach);
 
         }
+
         [HttpGet]
         public IActionResult Create()
         {
             DanhSach();
             return View();
         }
+
         [HttpPost]
-        public IActionResult Create( CreateSach sachcreate )
+        public IActionResult Create( Sach sach )
         {
+            if (!ModelState.IsValid)
+            {
+                return View(sach); // Trả về view cùng với thông tin lỗi
+            }
+            var maxhientai = _s.GetMaxMaSach();
             DanhSach();
-            if (sachcreate.Giaban < 0)
-            {
-                ModelState.AddModelError("Giaban", "Giá bán không thể âm.");
-            }
+            var getUser = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            sach.Masach = MaTutang(maxhientai);
+            // cách 2 trên UI @Html.HiddenFor(model => model.Masach)
+            // Cách 3 Xóa lỗi liên quan đến Masach trong ModelState (nếu có)
+            ModelState.Remove("Masach");
+            sach.UserId = int.Parse(getUser);
 
-            if (sachcreate.Giamua < 0)
-            {
-                ModelState.AddModelError("Giamua", "Giá mua không thể âm.");
-            }
+            _s.Add(sach);
+            return RedirectToAction("Index");
 
-            if (sachcreate.Giamgia < 0)
-            {
-                ModelState.AddModelError("Giamgia", "Giảm giá không thể âm.");
-            }
-            //var maxhientai = _s.GetAll()
-            //                    .OrderByDescending(s => s.Masach)
-            //                    .FirstOrDefault()?.Masach;
-            //sach.Masach = MaTutang(maxhientai);
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    var maxhientai = _s.GetAll()
-                                        .OrderByDescending(s => s.Masach)
-                                        .FirstOrDefault()?.Masach;
-                    var sach = new Sach()
-                    {
-                        Giaban = sachcreate.Giaban,
-                        Giamgia = sachcreate.Giamgia,
-                        Giamua = sachcreate.Giamua,
-                        Maloaisach = sachcreate.Maloaisach,
-                        Matg = sachcreate.Matg,
-                        Lantaiban = sachcreate.Lantaiban,
-                        Namxuatban = sachcreate.Namxuatban,
-                        Tennhaxuatban = sachcreate.Tennhaxuatban,
-                        Tenlinhvuc = sachcreate.Tenlinhvuc,
-                        Tensach = sachcreate.Tensach,
-                        Masach =MaTutang(maxhientai),
-                    };
-                    _s.Add(sach);
-                    return RedirectToAction("Index"); // Chuyển hướng đến trang danh sách sau khi thêm thành công
-                }
-                catch (Exception ex)
-                {
-                    ModelState.AddModelError("", "Có lỗi xảy ra khi lưu dữ liệu: " + ex.Message);
-                }
-            }
-
-
-            // Nếu dữ liệu không hợp lệ, hiển thị lại trang với lỗi xác thực
-            return View("Create");
         }
+
         [HttpGet]
         public IActionResult Edit( string id )
         {
@@ -128,6 +98,7 @@ namespace QUANLYTHUVIEN.Controllers
             var sach = _s.GetById(id);
             return View(sach);
         }
+
         [HttpPost]
         public IActionResult Edit( Sach sach )
         {
@@ -135,6 +106,7 @@ namespace QUANLYTHUVIEN.Controllers
             _s.Update(sach);
             return RedirectToAction("Index");
         }
+
         [HttpPost]
         public IActionResult Delete( string id )
         {
@@ -143,6 +115,10 @@ namespace QUANLYTHUVIEN.Controllers
             return RedirectToAction("Index");
         }
 
-
+        //public async Task<IActionResult> GetAllSaches()
+        //{
+        //    var saches = await _s.GetAllSachesAsync();
+        //    return View(saches);
+        //}
     }
 }

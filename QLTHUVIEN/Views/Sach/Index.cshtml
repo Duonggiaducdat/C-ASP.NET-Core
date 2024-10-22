@@ -1,7 +1,5 @@
-﻿@model X.PagedList.IPagedList<QLTHUVIEN.Models.Sach>
-@using X.PagedList.Mvc.Common
-@using X.PagedList.Mvc.Core
-
+﻿@using X.Web.PagedList
+@model X.PagedList.IPagedList<QLTHUVIEN.Models.Sach>
 
 
 @{
@@ -17,6 +15,7 @@
                 <a asp-action="Create" class="btn btn-primary">Thêm sách mới</a>
             </p>
         </div>
+       
         <div class="col-9">
             <form asp-action="Index" method="get">
                 <div class="row">
@@ -57,7 +56,7 @@
                             <td>@item.Tensach</td>
                             <td>@item.Matg</td>
                             <td>@item.Tenlinhvuc</td>
-                            <td>@(item.MaloaisachNavigation.Maloai)</td>
+                            <td>@item.Maloaisach</td>
                             <td>@item.Giamua</td>
                             <td>@item.Giaban</td>
                             <td style="width : 135px">

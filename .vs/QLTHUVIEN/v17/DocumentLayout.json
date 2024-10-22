@@ -3,287 +3,498 @@
   "WorkspaceRootPath": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\models\\qltvcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\models\\qltvcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\models\\phieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\models\\phieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\textcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\textcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\sachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\sachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\interfaces\\itacgiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\interfaces\\itacgiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\interfaces\\isachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\interfaces\\isachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\loaisachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\loaisachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\tacgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\tacgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\loaisach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\loaisach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\tacgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\tacgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\models\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\models\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\loaisach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\loaisach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\sachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\sachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\tacgiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\tacgiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\interfaces\\isachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\interfaces\\isachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\loaisachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\loaisachservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\services\\phieumuonservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\services\\phieumuonservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\phieumuoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\phieumuoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\text\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\text\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\loaisach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\loaisach\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|c:\\users\\duong dat\\source\\repos\\qlthuvien\\qlthuvien\\views\\phieumuon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D8118F3-BB88-461F-A368-40559E5485E2}|QLTHUVIEN\\QLTHUVIEN.csproj|solutionrelative:qlthuvien\\views\\phieumuon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "DockedHeight": 259,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "QLTHUVIEN\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwDEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-09T08:55:53.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoaiSachServices.cs",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\LoaiSachServices.cs",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\LoaiSachServices.cs",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\LoaiSachServices.cs",
-              "RelativeToolTip": "QLTHUVIEN\\Services\\LoaiSachServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "QLTVContext.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\QLTVContext.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Models\\QLTVContext.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\QLTVContext.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Models\\QLTVContext.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA2wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T08:12:07.807Z"
+              "WhenOpened": "2024-09-24T06:34:12.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Index.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Index.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Index.cshtml",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFsAAAAJAAAA",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAwEIAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T08:02:37.345Z"
+              "WhenOpened": "2024-09-24T06:18:50.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ISachServices.cs",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ISachServices.cs",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Interfaces\\ISachServices.cs",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ISachServices.cs",
-              "RelativeToolTip": "QLTHUVIEN\\Interfaces\\ISachServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:53:40.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Create.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Create.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Create.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:41:54.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Details.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Loaisach\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Details.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Loaisach\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:38:27.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SachServices.cs",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\SachServices.cs",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\SachServices.cs",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\SachServices.cs",
-              "RelativeToolTip": "QLTHUVIEN\\Services\\SachServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:38:51.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Index.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Tacgia\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Index.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Tacgia\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:39:51.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:39:14.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Tacgia.cs",
               "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Tacgia.cs",
               "RelativeDocumentMoniker": "QLTHUVIEN\\Models\\Tacgia.cs",
               "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Tacgia.cs",
               "RelativeToolTip": "QLTHUVIEN\\Models\\Tacgia.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA6wAwAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:36:24.808Z"
+              "WhenOpened": "2024-09-24T04:56:39.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Create.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Tacgia\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Create.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Tacgia\\Create.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABIAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:36:00.323Z"
+              "DocumentIndex": 8,
+              "Title": "TacGiaServices.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\TacGiaServices.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\TacGiaServices.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\TacGiaServices.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Services\\TacGiaServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T08:50:46.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
+              "Title": "LoaiSachServices.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\LoaiSachServices.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\LoaiSachServices.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\LoaiSachServices.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Services\\LoaiSachServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T08:49:47.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PhieuMuonServices.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\PhieuMuonServices.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\PhieuMuonServices.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\PhieuMuonServices.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Services\\PhieuMuonServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T07:58:56.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SachServices.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\SachServices.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Services\\SachServices.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Services\\SachServices.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Services\\SachServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAtwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:43:27.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SachController.cs",
               "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\SachController.cs",
               "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\SachController.cs",
               "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\SachController.cs",
               "RelativeToolTip": "QLTHUVIEN\\Controllers\\SachController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAowDcAAAAJAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAApwDoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:33:32.982Z",
+              "WhenOpened": "2024-09-05T06:39:07.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Index.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T07:03:32.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Create.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:37:53.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Details.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:37:54.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Sach.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Models\\Sach.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Sach.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Models\\Sach.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:39:03.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Program.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Program.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Program.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T06:56:17.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HttpClientExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Helpers\\HttpClientExtensions.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Helpers\\HttpClientExtensions.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Helpers\\HttpClientExtensions.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Helpers\\HttpClientExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:55:55.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ISachServices.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ISachServices.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Interfaces\\ISachServices.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ISachServices.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Interfaces\\ISachServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:48:10.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Loaisach\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:34:51.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Sach\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Sach\\Edit.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Sach\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:37:52.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Text\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Text\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Text\\Index.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Text\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwD0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T07:57:42.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PhieumuonController.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\PhieumuonController.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\PhieumuonController.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\PhieumuonController.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Controllers\\PhieumuonController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwDIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T04:00:18.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TextController.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\TextController.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\TextController.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\TextController.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Controllers\\TextController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T07:57:35.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABcBAAAAAAAAAAAAwDsBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:08:00.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:07:54.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T08:07:55.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T07:45:40.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\appsettings.Development.json",
+              "RelativeToolTip": "QLTHUVIEN\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-05T06:51:59.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\appsettings.json",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\appsettings.json",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\appsettings.json",
+              "RelativeToolTip": "QLTHUVIEN\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-05T06:51:56.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "LoaisachController.cs",
               "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\LoaisachController.cs",
               "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\LoaisachController.cs",
               "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\LoaisachController.cs",
               "RelativeToolTip": "QLTHUVIEN\\Controllers\\LoaisachController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:33:26.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TacgiaController.cs",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\TacgiaController.cs",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Controllers\\TacgiaController.cs",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Controllers\\TacgiaController.cs",
-              "RelativeToolTip": "QLTHUVIEN\\Controllers\\TacgiaController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAA9wFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:31:41.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Edit.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Tacgia\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Edit.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Tacgia\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:31:34.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Details.cshtml",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Tacgia\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Tacgia\\Details.cshtml",
-              "RelativeToolTip": "QLTHUVIEN\\Views\\Tacgia\\Details.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T07:31:30.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITacGiaServices.cs",
-              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ITacGiaServices.cs",
-              "RelativeDocumentMoniker": "QLTHUVIEN\\Interfaces\\ITacGiaServices.cs",
-              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Interfaces\\ITacGiaServices.cs",
-              "RelativeToolTip": "QLTHUVIEN\\Interfaces\\ITacGiaServices.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T07:31:13.765Z"
+              "WhenOpened": "2024-09-05T06:39:05.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Phieumuon.cs",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Phieumuon.cs",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Models\\Phieumuon.cs",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Models\\Phieumuon.cs",
+              "RelativeToolTip": "QLTHUVIEN\\Models\\Phieumuon.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T04:10:18.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Phieumuon\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLTHUVIEN\\Views\\Phieumuon\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\Views\\Phieumuon\\Index.cshtml",
+              "RelativeToolTip": "QLTHUVIEN\\Views\\Phieumuon\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T04:03:29.86Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 168,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

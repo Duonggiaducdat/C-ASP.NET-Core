@@ -101,6 +101,14 @@
       "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
+      "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\css\\card.css",
+      "PackagePath": "staticwebassets\\css\\card.css"
+    },
+    {
+      "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -109,12 +117,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\11273677.jpg",
+      "PackagePath": "staticwebassets\\img\\11273677.jpg"
+    },
+    {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\AdminLTELogo.png",
       "PackagePath": "staticwebassets\\img\\AdminLTELogo.png"
     },
     {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\avatar.png",
       "PackagePath": "staticwebassets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar1.jpg"
     },
     {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\avatar2.png",
@@ -167,6 +183,10 @@
     {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\default-150x150.png",
       "PackagePath": "staticwebassets\\img\\default-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\default-book.png",
+      "PackagePath": "staticwebassets\\img\\default-book.png"
     },
     {
       "Id": "C:\\Users\\Duong Dat\\source\\repos\\QLTHUVIEN\\QLTHUVIEN\\wwwroot\\img\\icons.png",

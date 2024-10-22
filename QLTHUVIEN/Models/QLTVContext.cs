@@ -17,13 +17,13 @@ public partial class QLTVContext : DbContext
 
     public virtual DbSet<Hoadon> Hoadons { get; set; }
 
-    public virtual DbSet<Kho> Khos { get; set; }
-
     public virtual DbSet<Linhvuc> Linhvucs { get; set; }
 
     public virtual DbSet<Loaisach> Loaisaches { get; set; }
 
     public virtual DbSet<Nhaxuatban> Nhaxuatbans { get; set; }
+
+    public virtual DbSet<Phieumuon> Phieumuons { get; set; }
 
     public virtual DbSet<Sach> Saches { get; set; }
 
@@ -89,25 +89,6 @@ public partial class QLTVContext : DbContext
                 .HasColumnName("TONGTIEN");
         });
 
-        modelBuilder.Entity<Kho>(entity =>
-        {
-            entity.HasKey(e => e.Masach).HasName("PK__KHO__3FC48E4C1754EB71");
-
-            entity.ToTable("KHO");
-
-            entity.Property(e => e.Masach)
-                .HasMaxLength(7)
-                .IsUnicode(false)
-                .IsFixedLength()
-                .HasColumnName("MASACH");
-            entity.Property(e => e.Soluong).HasColumnName("SOLUONG");
-
-            entity.HasOne(d => d.MasachNavigation).WithOne(p => p.Kho)
-                .HasForeignKey<Kho>(d => d.Masach)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_KHO_SACH");
-        });
-
         modelBuilder.Entity<Linhvuc>(entity =>
         {
             entity.HasKey(e => e.Tenlinhvuc).HasName("PK__LINHVUC__A928AA112F69B2AD");
@@ -126,7 +107,7 @@ public partial class QLTVContext : DbContext
             entity.ToTable("LOAISACH");
 
             entity.Property(e => e.Maloaisach).HasColumnName("MALOAISACH");
-            entity.Property(e => e.Maloai)
+            entity.Property(e => e.MaLoai)
                 .HasMaxLength(7)
                 .IsUnicode(false)
                 .IsFixedLength();
@@ -147,6 +128,35 @@ public partial class QLTVContext : DbContext
                 .HasColumnName("TENNHAXUATBAN");
         });
 
+        modelBuilder.Entity<Phieumuon>(entity =>
+        {
+            entity.HasKey(e => e.MaPhieumuon).HasName("PK__Phieumuo__EACF4F18253708B9");
+
+            entity.ToTable("Phieumuon");
+
+            entity.Property(e => e.CmndNguoiMuon).HasMaxLength(20);
+            entity.Property(e => e.DiaChiNguoiMuon).HasMaxLength(255)
+                                                    .IsRequired(false);
+            entity.Property(e => e.HoTenNguoiMuon).HasMaxLength(100);
+            entity.Property(e => e.Masach)
+                .HasMaxLength(7)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.Ngaymuon).HasColumnType("datetime");
+            entity.Property(e => e.Ngaytra).HasColumnType("datetime");
+            entity.Property(e => e.SoDienThoaiNguoiMuon).HasMaxLength(20);
+            entity.Property(e => e.Trangthai).HasMaxLength(50);
+
+            entity.HasOne(d => d.MasachNavigation).WithMany(p => p.Phieumuons)
+                .HasForeignKey(d => d.Masach)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Phieumuon_Sach");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Phieumuons)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_PhieuMuon_UserId");
+        });
+
         modelBuilder.Entity<Sach>(entity =>
         {
             entity.HasKey(e => e.Masach).HasName("PK__SACH__3FC48E4CE437BC27");
@@ -161,6 +171,7 @@ public partial class QLTVContext : DbContext
             entity.Property(e => e.Giaban).HasColumnName("GIABAN");
             entity.Property(e => e.Giamgia).HasColumnName("GIAMGIA");
             entity.Property(e => e.Giamua).HasColumnName("GIAMUA");
+            entity.Property(e => e.HinhAnh).HasMaxLength(255);
             entity.Property(e => e.Lantaiban).HasColumnName("LANTAIBAN");
             entity.Property(e => e.Maloaisach).HasColumnName("MALOAISACH");
             entity.Property(e => e.Matg)
@@ -190,6 +201,10 @@ public partial class QLTVContext : DbContext
                 .HasForeignKey(d => d.Matg)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_SACH_TACGIA");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Saches)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_Sach_UserId");
         });
 
         modelBuilder.Entity<Tacgia>(entity =>
@@ -215,16 +230,13 @@ public partial class QLTVContext : DbContext
 
         modelBuilder.Entity<Taikhoan>(entity =>
         {
-            entity.HasKey(e => e.Username).HasName("PK__TAIKHOAN__B15BE12F6731B6E0");
+            entity.HasKey(e => e.UserId).HasName("PK__TAIKHOAN__1788CC4C9738D1F9");
 
             entity.ToTable("TAIKHOAN");
 
-            entity.Property(e => e.Username)
-                .HasMaxLength(20)
-                .HasColumnName("USERNAME");
-            entity.Property(e => e.PassWord)
-                .HasMaxLength(100)
-                .HasColumnName("PASS_WORD");
+            entity.Property(e => e.Password).HasMaxLength(100);
+            entity.Property(e => e.Role).HasMaxLength(20);
+            entity.Property(e => e.Username).HasMaxLength(50);
         });
 
         OnModelCreatingPartial(modelBuilder);
